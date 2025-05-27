@@ -1,0 +1,1 @@
+![Work Flow](./Guided%20Practice%20Flow.png "Guided Practice Work Flow")
