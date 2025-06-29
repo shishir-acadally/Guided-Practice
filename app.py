@@ -1170,7 +1170,7 @@ def push_feedback_data():
         feedback = {'session_info':st.session_state.feedback_data[0], 'history':st.session_state.feedback_data[1]['memory']}
         inserted_id = collection.insert_one(feedback).inserted_id
         print(f"Feedback data pushed to database with ID: {inserted_id}")
-        return True
+        return True 
     except Exception as e:
         print(f"Error pushing feedback data: {e}")
         return False
@@ -1333,7 +1333,7 @@ def get_oauth_config():
     return {
         "client_id": st.secrets["google"]["client_id"],
         "client_secret": st.secrets["google"]["client_secret"],
-        "redirect_uri": "http://localhost:8501"
+        "redirect_uri": st.secrets["google"]["redirect_url"]
     }
 
 def authenticate_user():
