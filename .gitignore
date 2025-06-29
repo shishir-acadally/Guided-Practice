@@ -5,3 +5,4 @@ __pycache__
 # Logs
 logs
 .venv/
+.streamlit
